@@ -1,0 +1,14 @@
+# compile
+javac com/pack/*.java
+
+# jar
+jar cf target.jar com/pack/*.class
+
+# update jar
+jar uf Jtarget.jar com/pack/UpdatePack.class
+
+# debug mode
+java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n -jar target.jar
+
+jdb -attach localhost:8000
+> stop at com.pack.Main.<init>
