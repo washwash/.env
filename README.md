@@ -1,2 +1,2 @@
 # .env
-my env and tips
+my env and tricks
