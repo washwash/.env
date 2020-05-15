@@ -1,0 +1,10 @@
+  [user]
+      email = gordeev.and.and@gmail.com
+      name = gordeev
+   
+  [merge]
+      tool = vimdiff
+      conflictstyle = diff3
+  
+  [mergetool]
+      prompt = false
