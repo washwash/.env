@@ -118,4 +118,13 @@ export PATH=$PATH:~/.bin/:$JAVA_HOME/bin:/bin:/usr/bin:$HOME/.poetry/bin
 
 # Liquid Prompt
 [[ $- = *i* ]] && source ~/.bin/liquidprompt
-LP_PS1_POSTFIX="\n>"
+LP_PS1_POSTFIX="\n#"
+
+#  terminal name
+function set-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
