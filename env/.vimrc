@@ -1,5 +1,6 @@
 syntax on
 
+set clipboard=unnamed
 set number
 set nocompatible
 filetype off
